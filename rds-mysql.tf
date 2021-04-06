@@ -3,7 +3,7 @@ data "aws_ssm_parameter" "mysqlpassword" {
 }
 
 module "db" {
-  source = "git::ssh://git@gitlab.et-scm.com/tio/terraform-rds.git?ref=1.2.3"
+  source = "git::ssh://git@github.com:rgnaveen/terraform-rds.git"
 
   vpc_id                         = "${var.vpc_id}"
   rds_instance_basename          = "db"
