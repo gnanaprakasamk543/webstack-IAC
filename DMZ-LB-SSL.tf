@@ -13,7 +13,7 @@ resource "aws_alb" "webserver_alb" {
 
   tags= {
     Standard = "webserver"
-    orchestration = "git@github.com:rgnaveen/westack_iac_tr.git"
+    orchestration = "git@github.com:rgnaveen/westack_IAC.git"
     CostCode = "00000"
     Name = "webserver_ALB"
     Contact = "rg.naveenkumar@hotmail.com"
