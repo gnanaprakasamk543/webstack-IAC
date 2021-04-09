@@ -59,7 +59,7 @@ resource "aws_security_group_rule" "allow_http_8080_from_alb" {
     to_port = 80
     protocol = "tcp"
     source_security_group_id = "${aws_security_group.alb.id}"
-    security_group_id = "${aws_security_group.ucapp_webserver.id}"
+    security_group_id = "${aws_security_group.webstack-IAC_webserver.id}"
 }
 
 resource "aws_security_group_rule" "allow_all_outbound" {
